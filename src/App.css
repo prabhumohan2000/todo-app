@@ -73,9 +73,8 @@ body {
 /* Hero */
 .hero {
   padding-top: 120px;
-  background:
-    radial-gradient(600px 300px at 20% 0%, rgba(108,166,255,0.25), transparent),
-    radial-gradient(600px 300px at 80% 0%, rgba(21,207,138,0.25), transparent);
+  min-height: 80vh;
+  /* Background image applied inline in React to avoid CSS bundler resolution */
 }
 .hero-content { text-align: center; }
 .hero h1 { font-size: clamp(36px, 5vw, 54px); margin: 0 0 10px; }
@@ -86,6 +85,9 @@ body {
   padding: 12px 18px;
   border-radius: 12px;
   text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
 }
 .btn-primary { background: var(--primary); color: #081126; font-weight: 700; }
 .btn-primary:hover { background: var(--primary-600); }
@@ -107,6 +109,14 @@ body {
   border-radius: 16px;
   padding: 18px;
   box-shadow: var(--shadow);
+}
+.card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: block;
 }
 .card h3 { margin-top: 0; }
 .card p { color: var(--muted); }

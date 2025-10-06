@@ -16,10 +16,17 @@ function App(): JSX.Element {
       </nav>
 
       <main>
-        <section id="home" className="section hero">
+        <section
+          id="home"
+          className="section hero"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(11,13,18,0.55), rgba(11,13,18,0.85)), url('/assets/images/hero.jpg') center / cover no-repeat",
+          }}
+        >
           <div className="container hero-content">
-            <h1>Train. Transform. Triumph.</h1>
-            <p>Modern facilities, expert coaches, and programs for every level.</p>
+            <h1>Best Gym in Avadi</h1>
+            <p>Premium fitness studio in Avadi with personal training, HIIT, and yoga.</p>
             <div className="hero-actions">
               <a href="#pricing" className="btn-primary">View Pricing</a>
               <a href="#classes" className="btn-outline">Explore Classes</a>
@@ -32,6 +39,11 @@ function App(): JSX.Element {
             <h2 className="section-title">Our Classes</h2>
             <div className="grid-3">
               <article className="card">
+                <img
+                  src="/assets/images/strength.jpg"
+                  alt="Strength training at GymFit Avadi"
+                  className="card-img"
+                />
                 <h3>Strength Training</h3>
                 <p>Build power with guided barbell and kettlebell sessions.</p>
                 <ul>
@@ -41,6 +53,11 @@ function App(): JSX.Element {
                 </ul>
               </article>
               <article className="card">
+                <img
+                  src="/assets/images/hiit.jpg"
+                  alt="HIIT and conditioning class in Avadi"
+                  className="card-img"
+                />
                 <h3>HIIT & Conditioning</h3>
                 <p>High intensity intervals to boost endurance and burn calories.</p>
                 <ul>
@@ -50,6 +67,11 @@ function App(): JSX.Element {
                 </ul>
               </article>
               <article className="card">
+                <img
+                  src="/assets/images/yoga.jpg"
+                  alt="Yoga and mobility session in Avadi"
+                  className="card-img"
+                />
                 <h3>Mobility & Yoga</h3>
                 <p>Recover, strengthen stabilizers, and improve flexibility.</p>
                 <ul>
@@ -77,8 +99,8 @@ function App(): JSX.Element {
                   <li>Free fitness assessment</li>
                 </ul>
                 <div className="cta-row">
-                  <a href="#" className="btn-outline">Details</a>
-                  <a href="#" className="btn-primary">Choose Basic</a>
+                  <button type="button" className="btn-outline">Details</button>
+                  <button type="button" className="btn-primary">Choose Basic</button>
                 </div>
               </article>
 
@@ -93,8 +115,8 @@ function App(): JSX.Element {
                   <li>Sauna & recovery lounge</li>
                 </ul>
                 <div className="cta-row">
-                  <a href="#" className="btn-outline">Details</a>
-                  <a href="#" className="btn-primary">Choose Plus</a>
+                  <button type="button" className="btn-outline">Details</button>
+                  <button type="button" className="btn-primary">Choose Plus</button>
                 </div>
               </article>
 
@@ -109,8 +131,8 @@ function App(): JSX.Element {
                   <li>Nutrition plan & check-ins</li>
                 </ul>
                 <div className="cta-row">
-                  <a href="#" className="btn-outline">Details</a>
-                  <a href="#" className="btn-primary">Choose Elite</a>
+                  <button type="button" className="btn-outline">Details</button>
+                  <button type="button" className="btn-primary">Choose Elite</button>
                 </div>
               </article>
             </div>
